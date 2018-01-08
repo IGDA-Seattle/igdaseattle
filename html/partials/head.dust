@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{+title}IGDA Seattle{/title}</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://use.typekit.net/dlx5jvk.css">
+<link rel="stylesheet" href="css/style.min.css">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="{+title}IGDA Seattle{/title}">
+<meta property="og:description" content="{+description}IGDA Seattle provides networking, learning, and speaker events to thousands of devs in Puget Sound’s thriving game industry.{/description}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{+ogImage}https://www.igdaseattle.org/images/logo-square.png{/ogImage}">
+<meta property="og:url" content="{+ogUrl}https://www.igdaseattle.org{/ogUrl}">
+<meta name="description" content="{+description}IGDA Seattle provides networking, learning, and speaker events to thousands of devs in Puget Sound’s thriving game industry.{/description}">
+<meta name="twitter:site" content="@IGDASeattle">
+<meta name="twitter:card" content="summary">

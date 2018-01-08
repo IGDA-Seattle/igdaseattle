@@ -1,0 +1,50 @@
+/**
+ * Footer
+ */
+
+.site-footer {
+  margin: 2em auto 0;
+  padding-bottom: 1em;
+  font-size: .9em;
+
+  ul {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  li {
+    margin: .25em 0;
+    display: block;
+
+    a {
+      color: $color-dark;
+
+      &:hover, &:focus {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__col {
+    float: left;
+    width: 50%;
+
+    @media (min-width: $mq-xxsmall) {
+      width: 30%;
+    }
+    @media (min-width: $mq-xsmall) {
+      width: 20%;
+    }
+  }
+
+  &__copy {
+    margin: 1em auto 0;
+    font-style: italic;
+    color: $color-grey;
+
+    @media (min-width: $mq-xsmall) {
+      float: right;
+      width: 18em;
+    }
+  }
+}

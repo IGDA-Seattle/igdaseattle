@@ -1,0 +1,34 @@
+<!-- Footer -->
+<footer class="site-footer u-container">
+  <ul class="site-footer__col">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/about.html">About</a>
+    </li>
+    <li>
+      <a href="/calendar.html">Calendar</a>
+    </li>
+    <li>
+      <a href="/jobs.html">Jobs</a>
+    </li>
+  </ul>
+  <ul class="site-footer__col">
+    <li>
+      <a href="https://www.facebook.com/IGDASeattle" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com/IGDASeattle" target="_blank" rel="noopener noreferrer">Twitter</a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/c/IGDASeattle" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/groups/2635269" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </li>
+  </ul>
+  <div class="site-footer__copy">
+    IGDA Seattle is a chapter of IGDA, a 501(c)(6) non-profit professional association. Questions? <a href="about/#contact">Contact us</a>.
+  </div>
+</footer>

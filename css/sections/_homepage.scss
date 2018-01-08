@@ -1,0 +1,76 @@
+/**
+ * Homepage
+ */
+
+.homepage-section {
+  margin-bottom: 1em;
+}
+
+// News & Events
+.facebook-embed {
+  position: relative;
+  min-height: 70px;
+  max-width: 100%;
+
+  &::before {
+    z-index: 1;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    height: 69px; // May change, dependant on FB's 3rd party styling
+    content: '';
+    background-color: $color-light;
+  }
+
+  &__heading {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: left;
+  }
+  &--news &__heading {
+    border-bottom: $border-width solid $color-primary-light;
+  }
+  &--events &__heading {
+    border-bottom: $border-width solid $color-secondary;
+  }
+}
+// Force FB to at least not stretch out the page when resizing down
+.fb-page, .fb-page span {
+  max-width: 100%;
+}
+
+// CTAs
+.cta {
+  display: block;
+  padding: 3em 2em;
+  text-align: center;
+  border: $border-width solid currentColor;
+
+  svg {
+    display: block;
+    width: 7em;
+    height: 7em;
+    margin: 0 auto 1em;
+    fill: currentColor;
+  }
+
+  &--job-board {
+    color: $color-primary;
+
+    &:hover, &:focus {
+      color: $color-primary-light;
+    }
+  }
+
+  &--calendar {
+    color: $color-secondary-dark;
+
+    &:hover, &:focus {
+      color: $color-secondary;
+    }
+  }
+}

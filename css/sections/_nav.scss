@@ -1,0 +1,49 @@
+/**
+ * Nav
+ */
+
+.site-nav {
+  // Logo
+  a.site-nav__logo {
+    padding: 0;
+  }
+
+  // Nav links
+  a {
+    padding: .25em .75em;
+    color: $color-dark;
+
+    &:hover, &:focus {
+      color: $color-primary;
+    }
+  }
+
+  li {
+    display: inline-block;
+
+    &:last-child a:last-child {
+      padding-right: 0;
+    }
+  }
+
+  // Social media icons
+  &__socials {
+    a {
+      padding-left: .5em;
+      padding-right: .5em;
+      color: $color-primary-light;
+
+      &:hover, &:focus {
+        color: $color-primary;
+      }
+    }
+
+    svg {
+      position: relative;
+      top: .1em;
+      height: 1em;
+      width: 1em;
+      fill: currentColor;
+    }
+  }
+}

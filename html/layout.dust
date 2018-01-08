@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    {> "partials/head" /}
+  </head>
+  <body class="{+ bodyClasses /}">
+    {> "partials/nav" /}
+
+    {+ content /}
+
+    {> "partials/footer" /}
+
+    <!-- JavaScript -->
+    {+ javascript }
+      <script src="js/script.min.js"></script>
+    {/ javascript }
+  </body>
+</html>

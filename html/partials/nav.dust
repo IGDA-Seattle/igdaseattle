@@ -1,0 +1,31 @@
+<!-- Nav -->
+<nav class="site-nav u-container">
+  <a class="site-nav__logo u-float-left" href="/">
+    <img src="images/logo.png" width="180" height="42" alt="IGDA Seattle">
+  </a>
+  <ul class="u-align-right">
+    <li>
+      <a href="/about.html">About</a>
+    </li>
+    <li>
+      <a href="/calendar.html">Calendar</a>
+    </li>
+    <li>
+      <a href="/jobs.html">Job Board</a>
+    </li>
+    <li class="site-nav__socials">
+      <a href="https://www.facebook.com/IGDASeattle" target="_blank" rel="noopener noreferrer">
+        {> "svgs/facebook" /}
+      </a>
+      <a href="https://www.twitter.com/IGDASeattle" target="_blank" rel="noopener noreferrer">
+        {> "svgs/twitter" /}
+      </a>
+      <a href="https://www.youtube.com/c/IGDASeattle" target="_blank" rel="noopener noreferrer">
+        {> "svgs/youtube" /}
+      </a>
+      <a href="https://www.linkedin.com/groups/2635269" target="_blank" rel="noopener noreferrer">
+        {> "svgs/linkedin" /}
+      </a>
+    </li>
+  </li>
+</nav>
