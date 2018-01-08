@@ -4,6 +4,22 @@
 
 .homepage-section {
   margin-bottom: 1em;
+
+  // Header
+  h1 {
+    // Fluid Typography Formula: https://www.smashingmagazine.com/2016/05/fluid-typography/
+    font-size: calc(1.2em + 8 * (100vw - #{$mq-xxsmall}) / 384);
+
+    @media (max-width: $mq-xxsmall) {
+      font-size: 1.2em;
+    }
+    @media (max-width: $mq-xsmall), (max-height: 30rem) {
+      margin-bottom: -1rem;
+    }
+    @media (min-width: $mq-small) {
+      font-size: 2em;
+    }
+  }
 }
 
 // News & Events

@@ -4,13 +4,7 @@
 
 .site-footer {
   margin: 2em auto 0;
-  padding-bottom: 1em;
   font-size: .9em;
-
-  ul {
-    margin: 0 auto;
-    padding-left: 0;
-  }
 
   li {
     margin: .25em 0;
@@ -28,6 +22,8 @@
   &__col {
     float: left;
     width: 50%;
+    margin: 0 auto 1em;
+    padding-left: 0;
 
     @media (min-width: $mq-xxsmall) {
       width: 30%;
@@ -38,7 +34,7 @@
   }
 
   &__copy {
-    margin: 1em auto 0;
+    margin: 1em auto .5em;
     font-style: italic;
     color: $color-grey;
 

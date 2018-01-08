@@ -13,9 +13,9 @@
  * </div>
  */
 
-$grid-breakpoint:   800px;
-$container-width:   1000px;
-$container-padding: 20px; // The horizontal space on each side of the grid
+$grid-breakpoint:   50em;
+$container-width:   67rem;
+$container-padding: 1rem; // The horizontal space on each side of the grid
 $total-columns:     12;
 $column-margin:     4%; // This should always be %, not a fixed px width.
 
