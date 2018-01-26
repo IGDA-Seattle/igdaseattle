@@ -58,35 +58,3 @@
 .fb-page, .fb-page span {
   max-width: 100%;
 }
-
-// CTAs
-.cta {
-  display: block;
-  padding: 3em 2em;
-  text-align: center;
-  border: $border-width solid currentColor;
-
-  svg {
-    display: block;
-    width: 7em;
-    height: 7em;
-    margin: 0 auto 1em;
-    fill: currentColor;
-  }
-
-  &--job-board {
-    color: $color-primary;
-
-    &:hover, &:focus {
-      color: $color-primary-light;
-    }
-  }
-
-  &--calendar {
-    color: $color-secondary-dark;
-
-    &:hover, &:focus {
-      color: $color-secondary;
-    }
-  }
-}
