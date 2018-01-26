@@ -2,7 +2,7 @@
  * Mobile nav menu
  */
 
-$nav-breakpoint: $mq-xsmall;
+$nav-breakpoint: 52em;
 @import "../vendor/hamburgers";
 
 .site-nav__toggle {

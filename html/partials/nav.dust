@@ -14,6 +14,9 @@
       <a href="/about.html">About</a>
     </li>
     <li>
+      <a href="/communities.html">Communities</a>
+    </li>
+    <li>
       <a href="/calendar.html">Calendar</a>
     </li>
     <li>
@@ -31,6 +34,9 @@
       </a>
       <a href="https://www.linkedin.com/groups/2635269" target="_blank" rel="noopener noreferrer">
         {> "svgs/linkedin" /}
+      </a>
+      <a href="https://igdaseattle.eventbrite.com" target="_blank" rel="noopener noreferrer">
+        {> "svgs/eventbrite" /}
       </a>
     </li>
   </ul>
