@@ -1,0 +1,46 @@
+{> layout /}
+
+{< title }Seattle's Game Dev Communities{/ title }
+{< description }Find events from all the game dev communities in the Seattle area.{/ description }
+{< ogUrl }https://www.igdaseattle.org/communities.html{/ ogUrl }
+
+{< hints }
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="preconnect" href="https://airtable.com" crossorigin>
+{/ hints }
+
+{< content }
+
+  <!-- Page Header -->
+  <header class="page-header u-container">
+    <h1 class="page-header__title">
+      Seattle’s Game Dev Communities
+    </h1>
+    <h2 class="page-header__subtitle">
+      Seattle is a truly thriving city for game makers of all stripes. Don’t believe us? Just check out the plethora of game dev related communities and groups below! IGDA Seattle strives to act as a bridge between game devs of all kinds, starting with making groups and their events easily accessible to all.
+    </h2>
+  </header>
+
+  <!-- List of communities -->
+  <main class="u-container u-container--full">
+    <iframe class="communities-embed" src="https://airtable.com/embed/shrW7xf8yqqjHMq4G" frameborder="0" onmousewheel="" width="100%" height="600"></iframe>
+  </main>
+
+  <!-- CTAs -->
+  <aside class="page-end-ctas u-container">
+    <a class="cta cta--primary u-col-6x" href="/about.html#contact">
+      {> "svgs/add" /}
+      Are you an established and inclusive game dev community interested in being listed? Contact us.
+    </a>
+
+    <a class="cta cta--secondary u-col-6x" href="/calendar.html">
+      {> "svgs/calendar" /}
+      Are you looking to attend events or meet up with the groups above? Check out our calendar.
+    </a>
+  </aside>
+
+{/ content }
+
+{< javascript }
+  <script src="js/script.min.js"></script>
+{/ javascript }
