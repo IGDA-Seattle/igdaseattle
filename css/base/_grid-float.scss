@@ -28,6 +28,13 @@ $column-margin:     4%; // This should always be %, not a fixed px width.
   padding-left: $container-padding;
   margin-right: auto;
   margin-left: auto;
+
+  &--full {
+    @media (max-width: $mq-xsmall) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }
 
 .u-row {

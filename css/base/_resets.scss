@@ -24,7 +24,8 @@ body {
   -webkit-font-smoothing: antialiased; // Prevents font "thickness" flickering when animations start and stop
 }
 
-img, svg, video, audio, embed, object, iframe, canvas {
+img, svg, video, audio, embed, object, canvas,
+iframe:not(.ignore-autoheight) {
   max-width: 100%;                     // Make media elements responsive
   height: auto;                        // Preserve aspect ratio
   border: 0;                           // Fixes image links gaining a border in IE 8-10
