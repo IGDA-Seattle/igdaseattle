@@ -3,7 +3,7 @@
   <head>
     {> "partials/head" /}
   </head>
-  <body class="{+ bodyClasses /}">
+  <body class="is-fading-in">
     {> "partials/nav" /}
 
     {+ content /}
