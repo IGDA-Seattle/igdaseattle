@@ -31,6 +31,10 @@ iframe:not(.ignore-autoheight) {
   border: 0;                           // Fixes image links gaining a border in IE 8-10
 }
 
+figure {
+  margin: 0 auto;                      // Reset default figure margins
+}
+
 main, details, summary, aside, figcaption, figure,
 header, footer, nav, menu, section, article {
   display: block;                      // Prevents layouts from breaking on IE 8-11 & Firefox
