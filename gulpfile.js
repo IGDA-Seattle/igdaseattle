@@ -4,6 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var imagemin = require('gulp-imagemin');
 var child = require('child_process');
 var gutil = require('gulp-util');
 
@@ -28,6 +29,13 @@ gulp.task('js', function() {
     .pipe(gulp.dest(destDir + 'js/'))
 });
 
+// Image optimization
+gulp.task('img', function() {
+  return gulp.src(srcDir + 'images/**/*.{png,jpg,gif}')
+    .pipe(imagemin())
+    .pipe(gulp.dest(destDir + 'images/'))
+});
+
 // Jekyll already handles html building, watching, and serving.
 // It makes more sense to let it do its thing as a child process.
 // @credit https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/
@@ -45,7 +53,8 @@ gulp.task('jekyll', function() {
 });
 
 // Putting it all together
-gulp.task('default', ['css', 'js', 'jekyll'], function() {
+gulp.task('default', ['css', 'js', 'img', 'jekyll'], function() {
   gulp.watch(srcDir + 'css/**/*.scss', ['css']);
   gulp.watch(srcDir + 'js/**/*.js', ['js']);
+  gulp.watch(srcDir + 'images/**/*.{.png,jpg,gif}', ['img']);
 })
