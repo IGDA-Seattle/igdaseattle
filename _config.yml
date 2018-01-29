@@ -17,6 +17,9 @@ exclude: [
   "package-lock.json",
   "gulpfile.js",
   "_assets",
+  "assets/README.md",
+  "README.md",
+  "screenshot.jpg",
   "vendor",
 ]
 compress_html:
