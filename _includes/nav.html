@@ -1,0 +1,29 @@
+<!-- Nav -->
+<nav class="site-nav u-container">
+  <!-- Home/Logo -->
+  <a class="site-nav__logo" href="/">
+    <img src="/assets/images/logo.png" width="180" height="42" alt="{{ site.title }}">
+  </a>
+  <!-- Mobile nav -->
+  <button id="js-mobile-nav-toggle" class="site-nav__toggle hamburger hamburger--collapse"
+  type="button" aria-label="Menu" aria-controls="navigation">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <!-- Links -->
+  <ul class="site-nav__toggled u-float-right">
+  {% for link in site.data.site-nav %}
+    <li>
+      <a href="{{ link.url }}">{{ link.text }}</a>
+    </li>
+  {% endfor %}
+    <li class="site-nav__socials">
+    {% for social in site.data.social-media %}
+      <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
+        {% include svgs/{{ social.svg }}.svg %}
+      </a>
+    {% endfor %}
+    </li>
+  </ul>
+</nav>

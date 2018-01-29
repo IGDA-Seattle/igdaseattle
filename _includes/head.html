@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<!-- Resource Hints -->
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+{{ page.hints }}
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://use.typekit.net/dlx5jvk.css">
+<link rel="stylesheet" href="/assets/css/style.min.css">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% if page.title %}{{ page.ogImage }}{% else %}{{ site.ogImage }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:site" content="{{ site.twitter }}">
+<meta name="twitter:card" content="summary">

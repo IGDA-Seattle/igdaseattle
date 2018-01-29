@@ -1,0 +1,13 @@
+<!-- Calls to Action -->
+{% if page.ctas %}
+  <aside class="{{ page.ctaClasses }} u-container">
+  {% for cta in page.ctas %}
+    <a class="cta cta--{% cycle 'primary', 'secondary' %} u-col-6x" href="{{ cta.href }}">
+      {% if cta.svg %}
+        {% include svgs/{{ cta.svg }}.svg %}
+      {% endif %}
+      {{ cta.copy }}
+    </a>
+  {% endfor %}
+  </aside>
+{% endif %}
