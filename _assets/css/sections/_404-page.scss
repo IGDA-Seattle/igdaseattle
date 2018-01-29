@@ -3,6 +3,12 @@
  * @credit https://codepen.io/theprash/pen/XmNQPg
  */
 
+// Hide page header
+.error-page .page-header {
+  display: none;
+}
+
+// SVG
 .animated-404 {
   width: 100%;
   margin-top: 2rem;
