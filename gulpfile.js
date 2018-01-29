@@ -4,45 +4,57 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var dusthtml = require('gulp-dust-html');
-var webserver = require('gulp-webserver');
+var imagemin = require('gulp-imagemin');
+var child = require('child_process');
+var gutil = require('gulp-util');
+
+// Directory setup
+var srcDir = '_assets/';
+var destDir = 'assets/';
 
 // CSS compiling
 gulp.task('css', function() {
-  return gulp.src('css/**/*.scss')
+  return gulp.src(srcDir + 'css/**/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(rename({suffix: '.min'}))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest(destDir + 'css/'))
 });
 
 // JS compiling
 gulp.task('js', function() {
-  return gulp.src(['js/**/*.js', '!js/**/*.min.js'])
+  return gulp.src(srcDir + 'js/**/*.js')
     .pipe(concat('script.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest(destDir + 'js/'))
 });
 
-// HTML compiling
-gulp.task('html', function () {
-  return gulp.src('html/**/*.html')
-   .pipe(dusthtml({basePath: 'html', config: {cache: false}}))
-   .pipe(gulp.dest('./'));
+// Image optimization
+gulp.task('img', function() {
+  return gulp.src(srcDir + 'images/**/*.{png,jpg,gif}')
+    .pipe(imagemin())
+    .pipe(gulp.dest(destDir + 'images/'))
 });
 
-// Localhost and live reload
-gulp.task('webserver', function() {
-  return gulp.src('./')
-    .pipe(webserver({
-      livereload: true,
-      open: true
-    }));
+// Jekyll already handles html building, watching, and serving.
+// It makes more sense to let it do its thing as a child process.
+// @credit https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/
+gulp.task('jekyll', function() {
+  var jekyll = child.spawn('jekyll', ['serve']);
+
+  var jekyllLogger = function(buffer) {
+    buffer.toString().split(/\n/).forEach(function(message) {
+      gutil.log(message)
+    });
+  }
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
 });
 
 // Putting it all together
-gulp.task('default', ['css', 'js', 'html', 'webserver'], function() {
-  gulp.watch('css/**/*.scss', ['css']);
-  gulp.watch(['js/**/*.js', '!js/**/*.min.js'], ['js']);
-  gulp.watch(['html/**/*.html', 'html/**/*.dust'], ['html']);
+gulp.task('default', ['css', 'js', 'img', 'jekyll'], function() {
+  gulp.watch(srcDir + 'css/**/*.scss', ['css']);
+  gulp.watch(srcDir + 'js/**/*.js', ['js']);
+  gulp.watch(srcDir + 'images/**/*.{.png,jpg,gif}', ['img']);
 })

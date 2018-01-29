@@ -1,0 +1,27 @@
+<!-- Footer -->
+<footer class="site-footer u-container">
+  <ul class="site-footer__col">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    {% for link in site.data.site-nav %}
+      <li>
+        <a href="{{ link.url }}">{{ link.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <ul class="site-footer__col">
+  {% for social in site.data.social-media %}
+    <li>
+      <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.name }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  <div class="site-footer__copy">
+    {{ site.footerCopy }}
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/assets/js/script.min.js"></script>
+{{ page.scripts }}

@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="{{page.bodyClass}} is-fading-in">
+    {% include nav.html %}
+
+    {% include page-header.html %}
+    {{ content }}
+    {% include page-ctas.html %}
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,84 @@
+/**
+ * 404 page
+ * @credit https://codepen.io/theprash/pen/XmNQPg
+ */
+
+// Hide page header
+.error-page .page-header {
+  display: none;
+}
+
+// SVG
+.animated-404 {
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 15em;
+  font-weight: 900;
+
+  @media (min-width: $mq-xsmall) {
+    height: 50vh;
+  }
+
+  .moving-dashes {
+    fill: none;
+    stroke-width: 6;
+    stroke-linejoin: round;
+    stroke-dasharray: 80 330;
+    stroke-dashoffset: 0;
+    animation: moving-dashes 6s infinite linear;
+
+    &:nth-child(4n + 1) {
+      animation-delay: -1.5s;
+    }
+    &:nth-child(4n + 2) {
+      animation-delay: -3s;
+    }
+    &:nth-child(4n + 3) {
+      animation-delay: -4.5s;
+    }
+    &:nth-child(4n + 4) {
+      animation-delay: -6s;
+    }
+
+    &:nth-child(odd) {
+      stroke: $color-primary;
+    }
+    &:nth-child(even) {
+      stroke: $color-primary-light;
+    }
+
+    &--reversed {
+      &:nth-child(odd) {
+        stroke: $color-primary-light;
+      }
+      &:nth-child(even) {
+        stroke: $color-primary;
+      }
+    }
+  }
+  @keyframes moving-dashes {
+    100% { stroke-dashoffset: -400; }
+  }
+
+  .fill-in {
+    fill: none;
+    stroke-linejoin: round;
+    stroke-dasharray: 1160;
+    stroke-dashoffset: 1160;
+    stroke-width: 4;
+    animation: fill-in 5s infinite ease;
+
+    &:nth-child(even) {
+      stroke: $color-secondary;
+    }
+    &:nth-child(odd) {
+      stroke: $color-secondary-dark;
+      animation-delay: .2s;
+    }
+  }
+  @keyframes fill-in {
+    0%   { stroke-dashoffset: 0; }
+    50%  { stroke-dashoffset: 1160; }
+    100% { stroke-dashoffset: 0; }
+  }
+}

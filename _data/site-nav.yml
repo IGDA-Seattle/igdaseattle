@@ -1,0 +1,11 @@
+- text: About
+  url: /about
+
+- text: Communities
+  url: /communities
+
+- text: Calendar
+  url: /calendar
+
+- text: Submit a Talk
+  url: /talk
