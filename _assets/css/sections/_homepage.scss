@@ -1,0 +1,60 @@
+/**
+ * Homepage
+ */
+
+.homepage-section {
+  margin-bottom: 1em;
+
+  // Header
+  h1 {
+    // Fluid Typography Formula: https://www.smashingmagazine.com/2016/05/fluid-typography/
+    font-size: calc(1.2em + 8 * (100vw - #{$mq-xxsmall}) / 384);
+
+    @media (max-width: $mq-xxsmall) {
+      font-size: 1.2em;
+    }
+    @media (max-width: $mq-xsmall), (max-height: 30rem) {
+      margin-bottom: -1rem;
+    }
+    @media (min-width: $mq-small) {
+      font-size: 2em;
+    }
+  }
+}
+
+// News & Events
+.facebook-embed {
+  position: relative;
+  min-height: 70px;
+  max-width: 100%;
+
+  &::before {
+    z-index: 1;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    height: 69px; // May change, dependant on FB's 3rd party styling
+    content: '';
+    background-color: $color-light;
+  }
+
+  &__heading {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: left;
+  }
+  &--news &__heading {
+    border-bottom: $border-width solid $color-primary-light;
+  }
+  &--events &__heading {
+    border-bottom: $border-width solid $color-secondary;
+  }
+}
+// Force FB to at least not stretch out the page when resizing down
+.fb-page, .fb-page span {
+  max-width: 100%;
+}

@@ -1,0 +1,46 @@
+/**
+ * Footer
+ */
+
+.site-footer {
+  margin: 2em auto 0;
+  font-size: .9em;
+
+  li {
+    margin: .25em 0;
+    display: block;
+
+    a {
+      color: $color-dark;
+
+      &:hover, &:focus {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__col {
+    float: left;
+    width: 50%;
+    margin: 0 auto 1em;
+    padding-left: 0;
+
+    @media (min-width: $mq-xxsmall) {
+      width: 30%;
+    }
+    @media (min-width: $mq-xsmall) {
+      width: 20%;
+    }
+  }
+
+  &__copy {
+    margin: 2em auto .5em;
+    font-style: italic;
+    color: $color-grey;
+
+    @media (min-width: $mq-xsmall) {
+      float: right;
+      width: 18em;
+    }
+  }
+}

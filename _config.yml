@@ -9,6 +9,16 @@ url: "" # TODO
 
 # Build Settings
 livereload: true
+exclude: [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "package.json",
+  "package-lock.json",
+  "gulpfile.js",
+  "_assets",
+  "vendor",
+]
 compress_html:
   clippings: all
   comments: all
