@@ -6,3 +6,8 @@ twitter: "@IGDASeattle"
 footerCopy: IGDA Seattle is a local chapter of IGDA, a 501(c)(6) non-profit professional association. Questions? <a href="/about">Contact us</a>.
 
 url: "" # TODO
+
+# Build Settings
+compress_html:
+  clippings: all
+  comments: all
