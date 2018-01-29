@@ -1,0 +1,30 @@
+<svg class="animated-404" viewBox="0 0 1320 300" aria-labelledby="title" role="img" >
+  <title id="title">404</title>
+
+  <symbol id="first-letter">
+    <text text-anchor="middle" x="35%" y="50%" dy=".35em">
+      4
+    </text>
+  </symbol>
+  <symbol id="second-letter">
+    <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+      0
+    </text>
+  </symbol>
+  <symbol id="third-letter">
+    <text text-anchor="middle" x="65%" y="50%" dy=".35em">
+      4
+    </text>
+  </symbol>
+
+  <use xlink:href="#first-letter" class="moving-dashes"></use>
+  <use xlink:href="#first-letter" class="moving-dashes"></use>
+  <use xlink:href="#first-letter" class="moving-dashes"></use>
+  <use xlink:href="#first-letter" class="moving-dashes"></use>
+  <use xlink:href="#second-letter" class="fill-in"></use>
+  <use xlink:href="#second-letter" class="fill-in"></use>
+  <use xlink:href="#third-letter" class="moving-dashes moving-dashes--reversed"></use>
+  <use xlink:href="#third-letter" class="moving-dashes moving-dashes--reversed"></use>
+  <use xlink:href="#third-letter" class="moving-dashes moving-dashes--reversed"></use>
+  <use xlink:href="#third-letter" class="moving-dashes moving-dashes--reversed"></use>
+</svg>
