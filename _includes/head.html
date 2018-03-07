@@ -21,7 +21,7 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{% if page.title %}{{ page.ogImage }}{% else %}{{ site.ogImage }}{% endif %}">
+<meta property="og:image" content="{% if page.ogImage %}{{ page.ogImage }}{% else %}{{ site.ogImage }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta name="description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:site" content="{{ site.twitter }}">
