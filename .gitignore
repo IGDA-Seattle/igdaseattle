@@ -9,6 +9,4 @@ node_modules
 .jekyll-metadata
 
 # Jekyll build
-dist/*
-!dist/assets
-!dist/README.md
+dist

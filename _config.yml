@@ -9,10 +9,6 @@ footerCopy: IGDA Seattle is a local chapter of IGDA, a 501(c)(6) non-profit prof
 # Build Settings
 livereload: true
 destination: ./dist
-keep_files: [
-  "assets",
-  "README.md",
-]
 include: [
   "_pages",
 ]
@@ -24,6 +20,7 @@ exclude: [
   "package.json",
   "package-lock.json",
   "gulpfile.js",
+  "assets/README.md",
   "README.md",
   "screenshot.jpg",
 ]

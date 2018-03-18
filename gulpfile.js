@@ -10,7 +10,7 @@ var gutil = require('gulp-util');
 
 // Directory setup
 var srcDir = '_assets/';
-var destDir = 'dist/assets/';
+var destDir = 'assets/';
 
 // CSS compiling
 gulp.task('css', function() {
