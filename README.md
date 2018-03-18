@@ -16,8 +16,8 @@ This website was designed and built by [Constance Chen](https://www.constanceche
 - `gulp`
 - Open up a tab to `http://localhost:4000`
 - Note:
-  - **Don't** edit anything within the `_site` or `assets` folders.
-  - **Do** edit root-level `*.html` files and templates/source files within `_`folders.
+  - **Don't** edit anything within the non `_`-prefixed distribution folders (e.g. `assets`, `dist`).
+  - **Do** edit templates/source files within `_`-prefixed folders.
 
 ### Deploying
 - `git commit`
