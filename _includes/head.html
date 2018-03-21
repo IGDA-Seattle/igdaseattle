@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{{ page.title | default: site.title }}</title>
 
 <!-- Resource Hints -->
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
@@ -18,12 +18,12 @@
 <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96">
 
 <!-- OpenGraph -->
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description | strip_html }}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{% if page.ogImage %}{{ page.ogImage }}{% else %}{{ site.ogImage }}{% endif %}">
+<meta property="og:image" content="{{ page.ogImage | default: site.ogImage }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta name="description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{{ page.description | default: site.description | strip_html }}">
 <meta name="twitter:site" content="{{ site.twitter }}">
 <meta name="twitter:card" content="summary">
 

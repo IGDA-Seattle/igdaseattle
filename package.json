@@ -3,7 +3,6 @@
   "license": "ISC",
   "version": "2.0.0",
   "author": "@constancecchen",
-  "main": "_site/index.html",
   "scripts": {
     "dev": "gulp"
   },
