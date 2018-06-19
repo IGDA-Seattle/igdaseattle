@@ -13,7 +13,7 @@ This website was designed and built by [Constance Chen](https://www.constanceche
   - `npm install` within this dir
 
 ### Developing
-- `gulp`
+- `npx gulp`
 - Open up a tab to `http://localhost:4000`
 - Note:
   - **Don't** edit anything within the non `_`-prefixed distribution folders (e.g. `assets`, `dist`).
