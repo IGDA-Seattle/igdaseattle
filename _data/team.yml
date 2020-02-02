@@ -1,31 +1,23 @@
-- name: Sela Davis
-  image: sela.jpg
-  bio: Sela is a Senior Software Engineer at VREAL (previously WG Cells & Xbox), and has been with IGDA Seattle since 2011.
-
 - name: Tim Cullings
   image: tim.jpg
-  bio: Tim is a Systems Engineer at Oculus VR, Vice President of Seattle Indies, and previously worked at Airtight Games.
-
-- name: Dave Mianowski
-  image: dave.jpg
-  bio: Dave is a Developer Account Manager with over 4 years at Xbox, and previously worked at Microsoft and Nintendo.
-
+  bio: 
+  
 - name: Erica Absetz
   image: erica.jpg
-  bio: Erica is a Senior Business Intelligence Analyst at Wargaming, and has been with IGDA Seattle since 2017.
-
-- name: Constance Chen
-  image: constance.jpg
-  bio: Constance is a Software Engineer, Secretary of Seattle Indies, and Web Administrator of GeekGirlCon.
+  bio:
+  
+- name: Dave Mianowski
+  image: dave.jpg
+  bio: 
 
 - name: Bilgem Cakir
   image: bilgem.jpg
-  bio: Bilgem is an indie dev previously at Amazon and Microsoft, and handles IGDA Seattle's videography & photography.
-
-- name: Jeaneane Falkler
-  image: jeaneane.jpg
-  bio: Jeaneane has been with IGDA Seattle since 2014, and is currently bringing her experience in games bizdev to Minecraft.
+  bio: 
 
 - name: Terence Tolman
   image: terence.jpg
-  bio: Terence is a 2D concept artist and 3D modeler currently at Against Gravity, and previously with IGDA Albany.
+  bio: 
+
+- name: Cami Smith
+  image: cami.jpg
+  bio: 
