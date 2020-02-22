@@ -1,6 +1,6 @@
 - name: Tim Cullings
   image: tim.jpg
-  bio: 
+  bio: Tim is a Systems Engineer at Oculus by day and a Founding Board Member for Seattle Indies and a member of Board for the Seattle Chapter of IGDA in his spare time, helping to setup events for our local game developer community. Tim helped found GUILD, a support group for indie game developer community organizers and Games For Our Future, a multi-city game jam that brings together climate science researchers and game devs to make games about climate change related issues.
   
 - name: Erica Absetz
   image: erica.jpg
@@ -12,7 +12,7 @@
 
 - name: Bilgem Cakir
   image: bilgem.jpg
-  bio: 
+  bio: Bilgem is a graphics/animation/simulation programmer who has shipped MMORPGs, graphics APIs and consumer devices. After two decades in corporate life (MS, AMZN, and a few startups), he is currently bootstrapping a AA game studio as cofounder and CTO.
 
 - name: Terence Tolman
   image: terence.jpg
@@ -20,8 +20,12 @@
 
 - name: Cami Smith
   image: cami.jpeg
-  bio: 
+  bio: Cami Smith currently heads the Industry Relations role for the U.S. campuses of the Academy of Interactive Entertainment. (AIE.edu) Her job is to get the next generation of creators hired into the game and XR industry. She is mission-driven about building a more inclusive and diverse community. If Cami had any free time, she would spend it playing Beat Saber and listening to podcasts, like RealityQuest.
 
 - name: Benjamin Premack
   image: ben.jpg
-  bio: 
+  bio: Ben is the Managing Partner at Premack Rogers P.C. where he practices video game law.
+  
+- name: Terry Nguyen
+  image: terry.jpeg
+  bio: Terry's day-to-day activities include reading manga, typing on clacky mechanical keyboards, and working through his gaming backlog. He can also be found teaching Game Programming at the Seattle campus of the Academy of Interactive Entertainment.
